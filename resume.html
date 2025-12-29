@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="resume">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="photo.jpg" alt="Profile Photo">
+        <h1>Sakshi Sonavane</h1>
+        <p>Web Development Student</p>
+        <p>Email: sakshi@example.com | Phone: 9XXXXXXXXX</p>
+
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+        <a href="index.html" class="btn">Home</a>
+    </div>
+
+    <div class="section">
+        <h2>Career Objective</h2>
+        <p>
+            To secure a position where I can apply my technical skills
+            and grow as a web developer.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            <li>React (Beginner)</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>B.Sc. Computer Science</strong></p>
+        <p>University of Mumbai</p>
+        <p>2023 – 2026</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Student Management System</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Strengths</h2>
+        <ul>
+            <li>Quick Learner</li>
+            <li>Hard Working</li>
+            <li>Positive Attitude</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Declaration</h2>
+        <p>I hereby declare that the above information is true.</p>
+    </div>
+
+    <!-- Like Button Section -->
+    <div class="section">
+        <h2>Project Like</h2>
+        <button onclick="likeProject()" class="btn">👍 Like</button>
+        <p id="likeCount">Likes: 0</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section">
+        <h2>Contact Me</h2>
+        <p>Email: sakshi@example.com</p>
+        <p>Phone: 9XXXXXXXXX</p>
+
+        <form onsubmit="sendMail(); return false;">
+            <label>Name:</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="email" required><br><br>
+
+            <label>Message:</label><br>
+            <textarea id="message" required></textarea><br><br>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
